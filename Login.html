@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>E-Ticket system</title>
+	<style>
+		body {background-color: powderblue;}
+		h1 {font-size:80px; color: white; margin-top: 15px}
+		p    {color: black;}
+		img {width: 130px; height: 130px; display:block; margin-left: auto; margin-right: auto; padding-top: 20px}
+		input[type="text"],input[type="password"]{
+			height: 25px;
+		}
+		input[type="submit"]{
+			background: lightgrey;
+			margin: 10px 200px;
+			display: block;
+			padding: 5px 10px;		
+		}
+		.form-row{
+			margin: 10px;
+		}
+		.form-label{
+			float:left;
+			width: 20%;
+		}
+		.form-input{
+			float: left;
+			width: 80%;
+		}
+		.form-row::after{
+			content: ".";
+			clear:both;
+			visibility: hidden;
+			height: 0px;
+			display: block;
+		}
+	</style>
+<img src="irctc2.jpg" align="center">
+<center>
+	<h1>IRCTC WELCOMES YOU</h1>
+</center>
+<div class="fd" style="text-align: center;">
+	<form style="display: inline-block; font-weight: bold; font-size: 20px" action="Main.php" method="post">
+		<div class="form-row">
+			<div class="form-label">
+				<label for="name">Name</label>
+			</div>
+			<div class="form-input">
+				<input type="text" name="name">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-label">
+				<label for="password">Password</label>
+			</div>
+			<div class="form-input">
+				<input type="password" name="password">
+			</div>
+		</div>
+		<input type="submit">
+	</form>
+</div>
+
+</body>
+</html>
